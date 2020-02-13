@@ -33,4 +33,8 @@ public class TopicService {
             }
         }
     }
+
+    public void delete(String id) {
+        topics.removeIf(topic -> topic.getId().equals(id));
+    }
 }
